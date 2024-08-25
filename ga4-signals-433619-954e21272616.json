@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "ga4-signals-433619",
+  "private_key_id": "954e212726169fa8825dd4ae0a0afce32367c0af",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDf8Rx0tgBo026e\nfwBGR21nyQvSOSc+6ukxiDnc5UphUR4moA9V3jJT+MjDrMCdc076cV2ASs62qmrh\nIpf7BmXn2LEPnqN7JFOSe0McqUndfnNkNXTvwcETwJKSPuMbA/HDKFPkQtgudcXW\nqAFk2icXvfqCVa7LfoGHVZ7lSZqVJ15e26gA0jzzA1IUyI+jEqaZ+QxflgnLeaW8\n7nmXENRpBnA9adDpgC9nPmnKp9vkK7D4NGHVC6fsFgkBfuW9caQZxmhSWs1bxog4\n31OM1GQezIXAtrzBlhvT4ZQLrLVovz/oO7ehgvY3q6YRYGgtYhaSkxUqsxb76VXr\nAU6RCXiTAgMBAAECggEADkrTx28bij/UPjFaJyIajWvQtqixzzDW6TO0iFs/QAQZ\nVIW/9M8AOfPAJxzjaNPEep9kREfXTDkxe7o60Ok7n8G+AIKIvyyLrjxHsDtDB5aG\nbs1/771XQUIibfWthjqI4i0KDaC72LCTi9D1JdFL0BbD4jBDE6G4n+vgVD86VRfW\nN/kLkUf1H8wb2I+H10NkC0/ZlpFG4EJvh1iKPGqlF0W7erK9WmbsMWaGvm6DZ6HR\nY4bxDkNTTpEV3XriONkY+PagZ6EhQg0v+BPPkD/bgpfdP84dA0BeNyVcg0P9zaTB\nsFoR3jOtQotx1zacSHf3fKqOYQrsE0o/OpwqLBMG4QKBgQD34GtBvJlFlUVQDt51\nPztLhuzIPQQUe+m2hJCsUrJq20LfJ9GGJsjgGWtpU0EI7AeOnPUnz0yIaIsSLFyV\n67GnsGWo8My8ihfPfTa4IFfQ6Uq7uikBYRcwJ/xjQjArYTrR7DZ43otdDmJH+1v2\ntD9vtw9ur9cce5eQwmM35ZSQbQKBgQDnR+On+wzqKTGVsKx3K0DVe23k6lS/HI82\nhFaGDCtlw51eoAbyjjnigKl0iLT48sMKm7IsuntgB82cQWFUkaYWPITQydX9CexK\n5QvxwokTWDpkm9nnCNjsrjTHJlLvnHS4bGhXzFbI2MeB/lLl5o33m/sZaBd7oXkI\nL9YF2BqM/wKBgDyG9UnZBshB+enhp5qTtSPtL3Z5x7xEwb4KwtUBYIXNQpgBPh12\n7QgjzOGsLa5DDFlbpFVzPin09Tib0oPdSMU8wqYtHqFPSx8kYS823pqpzNDoVUj7\n71CYAv4t1FtTY6yM9IQxO3CeqYsQKtWkD/V0ivUpROq0lz8G6Hlmuw9FAoGBAMCY\nhgUJs8x/d1IvKL+oHjpoqa/6T45CSyRb+e1wzubUigUVgBOWyq9K81Ie0Y2KI09/\nLlW/CSSD+v3HGDUjgMp9pSB1I6SvEb2glVzC4gFg9Gd5vXB+Vp5px3ub926fvDcj\n15Rdjlt84k7nKcNXRhvPIcAbhYqngbGGnFSLjDijAoGBAMppffOMcWSVjtoRyK9X\nW78r9v6++TiMfq5Sg1lqt09lF5Bpedel3ji7D+x26zglaS0mmNstY2uot8kE9pt0\nAHQCduAJpepVYwNHIN3rTSaf5BbVh47+ysH4v0CfqUNwBTbwzZFXawXtJ7P9GCUX\n4KSdVN12SKb9t/KYetkVQ3o5\n-----END PRIVATE KEY-----\n",
+  "client_email": "ga4-signals@ga4-signals-433619.iam.gserviceaccount.com",
+  "client_id": "100948027149301038422",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/ga4-signals%40ga4-signals-433619.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
