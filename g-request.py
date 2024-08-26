@@ -71,7 +71,7 @@ def index():
         template = file.read()
     
     # Render the HTML template with the plots
-    return render_template_string(template, fig1_html=fig1_html, fig2_html=fig2_html, 
+    return render_template_string('index.html', fig1_html=fig1_html, fig2_html=fig2_html, 
                                   fig3_html=fig3_html, fig4_html=fig4_html, fig5_html=fig5_html, fig6_html=fig6_html)
 
 if __name__ == '__main__':
