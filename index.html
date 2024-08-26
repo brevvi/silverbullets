@@ -4,99 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Analytics Dashboard</title>
-    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 </head>
 <body>
     <h1>Analytics Dashboard</h1>
-
+    
     <h2>Sessions Over Time</h2>
-    <div id="sessions"></div>
-
+    {{ fig1_html|safe }}
+    
     <h2>Total Users Over Time</h2>
-    <div id="totalUsers"></div>
-
+    {{ fig2_html|safe }}
+    
     <h2>Screen Pageviews Over Time</h2>
-    <div id="screenPageViews"></div>
-
+    {{ fig3_html|safe }}
+    
     <h2>Conversions Over Time</h2>
-    <div id="conversions"></div>
-
+    {{ fig4_html|safe }}
+    
     <h2>Event Count Over Time</h2>
-    <div id="eventCount"></div>
-
+    {{ fig5_html|safe }}
+    
     <h2>User Engagement Duration Over Time</h2>
-    <div id="userEngagementDuration"></div>
-
-    <script>
-        const data = {{ data | tojson }};
-
-        const plotConfig = { responsive: true };
-
-        // Sessions Over Time
-        Plotly.newPlot('sessions', [{
-            x: data.dates,
-            y: data.sessions,
-            type: 'scatter',
-            mode: 'lines+markers',
-            name: 'Sessions'
-        }], {
-            title: 'Sessions Over Time'
-        }, plotConfig);
-
-        // Total Users Over Time
-        Plotly.newPlot('totalUsers', [{
-            x: data.dates,
-            y: data.totalUsers,
-            type: 'scatter',
-            mode: 'lines+markers',
-            name: 'Total Users'
-        }], {
-            title: 'Total Users Over Time'
-        }, plotConfig);
-
-        // Screen Pageviews Over Time
-        Plotly.newPlot('screenPageViews', [{
-            x: data.dates,
-            y: data.screenPageViews,
-            type: 'scatter',
-            mode: 'lines+markers',
-            name: 'Screen Pageviews'
-        }], {
-            title: 'Screen Pageviews Over Time'
-        }, plotConfig);
-
-        // Conversions Over Time
-        Plotly.newPlot('conversions', [{
-            x: data.dates,
-            y: data.conversions,
-            type: 'scatter',
-            mode: 'lines+markers',
-            name: 'Conversions'
-        }], {
-            title: 'Conversions Over Time'
-        }, plotConfig);
-
-        // Event Count Over Time
-        Plotly.newPlot('eventCount', [{
-            x: data.dates,
-            y: data.eventCount,
-            type: 'scatter',
-            mode: 'lines+markers',
-            name: 'Event Count'
-        }], {
-            title: 'Event Count Over Time'
-        }, plotConfig);
-
-        // User Engagement Duration Over Time
-        Plotly.newPlot('userEngagementDuration', [{
-            x: data.dates,
-            y: data.userEngagementDuration,
-            type: 'scatter',
-            mode: 'lines+markers',
-            name: 'User Engagement Duration'
-        }], {
-            title: 'User Engagement Duration Over Time'
-        }, plotConfig);
-    </script>
+    {{ fig6_html|safe }}
 </body>
 </html>
