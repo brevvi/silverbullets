@@ -1,10 +1,11 @@
 import os
 import json
+import csv
 import pandas as pd
 import plotly.express as px
 from google.analytics.data_v1beta import BetaAnalyticsDataClient
 from google.oauth2 import service_account
-from flask import Flask, render_template
+from flask import Flask, render_template_string
 
 app = Flask(__name__)
 
@@ -65,9 +66,13 @@ def index():
     fig5_html = fig5.to_html(full_html=False)
     fig6_html = fig6.to_html(full_html=False)
 
+    # Since index.html is not in the templates folder, we use render_template_string
+    with open('index.html', 'r') as file:
+        template = file.read()
+    
     # Render the HTML template with the plots
-    return render_template('index.html', fig1_html=fig1_html, fig2_html=fig2_html, 
-                           fig3_html=fig3_html, fig4_html=fig4_html, fig5_html=fig5_html, fig6_html=fig6_html)
+    return render_template_string(template, fig1_html=fig1_html, fig2_html=fig2_html, 
+                                  fig3_html=fig3_html, fig4_html=fig4_html, fig5_html=fig5_html, fig6_html=fig6_html)
 
 if __name__ == '__main__':
     app.run(debug=True)
