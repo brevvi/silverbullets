@@ -9,18 +9,9 @@ from flask import Flask, render_template
 app = Flask(__name__)
 
 def fetch_and_save_data():
-    # Check if the environment variable is set
-    service_account_info = os.getenv("GOOGLE_SERVICE_ACCOUNT_JSON")
-
-    if not service_account_info:
-        # If the environment variable is not set, raise an error
-        raise ValueError("A variável de ambiente GOOGLE_SERVICE_ACCOUNT_JSON não está definida.")
-
-    # Parse the JSON to ensure it's valid
-    try:
-        credentials_info = json.loads(service_account_info)
-    except json.JSONDecodeError as e:
-        raise ValueError("Erro ao decodificar o JSON das credenciais da conta de serviço: " + str(e))
+    # Load the service account credentials from the JSON file directly
+    with open('ga4-signals-433619-954e21272616.json') as json_file:
+        credentials_info = json.load(json_file)
 
     # Use the credentials to create a BetaAnalyticsDataClient
     credentials = service_account.Credentials.from_service_account_info(credentials_info)
